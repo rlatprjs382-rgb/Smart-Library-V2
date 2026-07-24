@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 - 홈</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="brand">📚 Library</a> 
+                <form action="" method="">
+                    <input class="input" type="text" placeholder="제목/저자/키워드로 검색...">
+                </form>
+                <div class="menu">
+                    <a class="btn basic" href="./login.html">로그인</a>
+                    <a class="btn basic" href="./signup.html">회원가입</a>
+                    <a class="btn" href="./mylib.html">나의 도서관</a>
+                    <a class="btn" href="./notices.html">공지사항</a>
+                    <a class="btn" href="./customers.html">고객센터</a>
+                    <a class="btn special" href="./admin.html" >관리자모드</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>도서검색</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>바로 검색하기</h3>
+                    <p>통합 검색창에서 원하는 도서를 찾아보세요.</p>
+                    <a class="btn special" href="./search.html">도서검색 페이지 이동</a>
+                </div>
+                <div class="card">
+                    <h3>카테고리</h3>
+                <div class="category-buttons">
+                    <a class="btn" href="./results.html?category=IT">IT</a>
+                    <a class="btn" href="./results.html?category=문학">문학</a>
+                    <a class="btn" href="./results.html?category=아동">아동</a>
+                    <a class="btn" href="./results.html?category=잡지">잡지</a>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>공지사항</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="title">[휴관 안내]</h3>
+                    <p class="title">추석 연휴 휴관 안내</p>
+                </div>
+                <div class="card">
+                    <h3 class="title">[신간 입고]</h3>
+                    <p class="title">프론트엔드 추천 도서 입고</p>
+                </div>
+                <div class="card">
+                    <strong>[이용 안내]</strong>
+                    <br>회원증 재발급 절차 변경
+                </div>
+                <div class="card">
+                    <b>[행사]</b>
+                    <br>독서의 달 이벤트
+                </div>
+            </div>
+        </section>
+        <!-- section 추가 -->
+    </main>
+    <footer class="container">
+        <div class="footer">&copy; Library Prototype - HTML & CSS Only</div>
+    </footer>
+</body>
+</html>

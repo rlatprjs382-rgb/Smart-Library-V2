@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 도서관</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="brand">📚 Library Admin</a> 
+                <div class="menu">
+                    <a class="btn" href="./index.html">홈</a>
+                    <a class="btn" href="./search.html">도서 검색</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>관리자 대시보드</h2>
+            <div class="cards">                
+                <div class="card">
+                    <h3>총 도서</h3>
+                    <p class="muted">1,245권</p>
+                </div>
+                <div class="card">
+                    <h3>회원 수</h3>
+                    <p class="muted">328권</p>
+                </div>
+                <div class="card">
+                    <h3>대출 중</h3>
+                    <p class="muted">52권</p>
+                </div>
+                <div class="card">
+                    <h3>연체 도서</h3>
+                    <p class="muted">7권</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>관리 메뉴</h2>
+            <div class="cards">                
+                <div class="card">
+                    <h3>도서 관리</h3>
+                    <p class="muted">도서 등록/수정/삭제</p>
+                </div>
+                <div class="card">
+                    <h3>회원 관리</h3>
+                    <p class="muted">회원 목록 / 권한 관리</p>
+                </div>
+                <div class="card">
+                    <h3>대출 관리</h3>
+                    <p class="muted">대출   /    반납   /  연체 관리</p>
+                </div>
+                <div class="card">
+                    <h3>공지사항 관리</h3>
+                    <p class="muted">공지 등록 / 수정</p>
+                </div>
+            </div>
+        </section>
+        <section class="book-section">
+            <h2>도서 등록</h2>
+            <form id="bookForm" action="" method="">         
+                <div class="book-form">
+                    <input class="input" id="inputTitle" type="text" placeholder="도서 제목">
+                    <input class="input" id="inputAuthor" type="text" placeholder="저자">
+                    <input class="input" id="inputPublisher" type="text" placeholder="출판사">
+                    <input class="input" id="inputYear" type="text" placeholder="발행년도">
+                    <input class="input" id="inputIsbn" type="text" placeholder="ISBN">
+                    <input class="input" id="inputCategory" type="text" placeholder="카테고리">
+                </div>
+                <div class="book-btn">
+                    <button class="btn special" id="addBookBtn" type="button">등록</button>
+                    <button class="btn basic" type="reset">초기화</button>
+                </div>
+            </form>
+        </section>
+        <section class="book-section">
+            <h2>도서목록</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>저자</th>
+                        <th>출판사</th>
+                        <th>발행년도</th>
+                        <th>ISBN</th>
+                        <th>카테고리</th>
+                        <th>상태</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTableBody">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/admin.js"></script>
+    
+</body>
+</html>

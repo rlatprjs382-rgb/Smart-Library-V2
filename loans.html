@@ -1,0 +1,53 @@
+<!-- loans.html -->
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>대출현황</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/button.css">
+    <style>
+    .table { border-radius: 20px;
+            width: 100%; margin: 15px 0px; box-shadow:0px 5px 10px darkgray;
+            padding: 5px;}
+    .table th, .table td {padding:16px; text-align:center;}
+    .table thead {background:#e3e9f0; }
+    .table tbody {background:#f7fbf6;}
+
+    .detail_sub {border: solid 1px darkgray; border-radius: 20px; padding: 5px 10px;}
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav"><a class="brand" href="index.html">📚 Library</a><a class="btn" href="mylib.html">나의 도서관</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2 class="section">대출현황</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>도서</th>
+          <th>대출일</th>
+          <th>반납예정</th>
+          <th>상태</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Clean Code</td>
+          <td>2026-08-20</td>
+          <td>2026-09-05</td>
+          <td><span class="badge warn">대출중</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>

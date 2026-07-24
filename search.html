@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 - 도서검색</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="brand">📚 Library</a> 
+                <form id="searchForm" action="" method="">
+                    <input id="searchInput" class="input" type="text" placeholder="제목/저자/키워드로 검색..."
+                        style="width: 500px;">
+                </form>
+                <div class="menu">
+                    <a class="btn" href="">공지사항</a>
+                    <a class="btn" href="">고객센터</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+    <section>
+            <h2>검색 가이드</h2>
+            <div class="cards">
+                <div class="card">
+                    <p>키워드 입력 후 엔터 → 결과 페이지로 이동합니다.</p>
+                </div>
+            </div>
+    </section>
+    </main>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* 도서 목록 */
+.book-section { padding: 20px; 
+                background-color: whitesmoke; border-radius: 20px;
+                box-shadow: 3px 5px 10px darkgray;
+                margin: 10px 5px; 
+                border: solid 1px blue;}
+
+.book-form {display: flex; flex-wrap: wrap; gap: 10px;}
+.book-form .input { width: calc(50% - 9px); font-size: 18px;}
+.book-btn {display: flex; gap: 15px; padding-top: 20px;}
+
+/* 테이블 서식 */
+table {width: 100%; border-collapse: collapse; 
+       border-radius: 10px; background-color: rgb(239, 227, 239) ;
+       box-shadow: 3px 5px 10px darkgray ;
+       }
+
+table th,
+table td {border-bottom: solid 1px rgb(171, 166, 166); 
+          height: 50px; text-align: center;}
+
+table .status {display: flex; gap : 10px; justify-content: center;}
+table .status > button {font-size: 1.05rem;}

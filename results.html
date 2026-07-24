@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 - 검색결과</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="brand">📚 Library</a> 
+                <form action="" method="">
+                    <input class="input" type="text" placeholder="제목/저자/키워드로 검색..."
+                        style="width: 500px;">
+                </form>
+                <div class="menu">
+                    <a class="btn" href="./search.html">도서검색</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+       <section>
+            <h2 id="resultTitle">검색 결과 (샘플)</h2>
+            <div id="resultCards" class="cards">
+                
+            </div>
+            
+       </section>
+    </main>
+
+    <div class="container">
+      <span class="btn">◀ 이전</span>
+      <span class="btn">1</span>
+      <span class="btn">2</span>
+      <span class="btn">다음 ▶</span>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/result.js"></script>
+
+</body>
+</html>

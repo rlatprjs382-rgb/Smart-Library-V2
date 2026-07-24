@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 - 도서 상세</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" aria-label="주 메뉴">
+                <a class="brand" href="index.html">📚 Library</a>
+                <form action=""  method="">
+                    <input class="input" placeholder="제목/저자/키워드로 검색…"/>
+                </form>
+                <div class="menu">
+                    <a class="btn" href="./results.html">검색결과</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <div class="detail_box">
+                <!-- 적절한 크기의 이미지로 대체 -->
+                <div style="width: 200px; height: 250px;">
+                    <img src="./images/clean_code.PNG" alt="표지" style="width: 100%;">
+                </div>
+                <div class="detail_right">
+                    <p class="badge" id="detailStatus">대출중 ˙ 반납예정 09/20</p>
+                    <h2 style="margin-bottom: 10px;" id="detailTitle">Clean Code</h2>
+                    <p class="muted" style="margin: 0;" id="detailAuthor">Rober C. Martin ˙ 2008</p>
+                    <p class="muted" style="margin: 0;" id="detailYear">Rober C. Martin ˙ 2008</p>
+                    <div class="muted" style="margin: 10px 0px;" id="detailCategory"><span class="detail_sub">IT</span><span class="detail_sub">Refactor</span></div>
+                    <div style="margin: 20px 0px;">
+                        <a class="btn" href="">예약하기(데모)</a>
+                        <a class="btn basic" href="">유사 도서</a>
+                    </div>
+                    <h2>소장정보</h2>
+                    <table class="table">
+                        <thead><tr><th>소장처</th><th>청구기호</th><th>상태</th><th>반납예정</th></tr></thead>
+                        <tbody><tr><td>본관 2층</td><td>A-13</td><td>대출중</td><td>09/12</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/data.js"></script>
+    <script src="./js/detail.js"></script>
+</body>
+</html>

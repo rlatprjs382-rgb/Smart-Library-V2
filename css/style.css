@@ -1,0 +1,51 @@
+/* 전체 기본 */
+* {box-sizing: border-box;}
+html, body {margin: 0; padding: 0; background-color: aliceblue;}
+a {text-decoration: none; color:black;}
+
+/* 헤더 레이아웃 */
+.header {background-color: white; border-bottom: solid 1px darkgray;
+         box-shadow: 0px 5px 10px rgb(216, 214, 214);}
+.container {width:1250px; margin: 10px auto; }
+.nav { display: flex; gap:30px; padding: 15px 0; justify-content: space-between;
+            align-items: center;}
+
+/* 헤더 구성요소별 서식 */
+.brand {font-size:20px; color:rgb(1, 29, 47); 
+        padding:6px 10px; border-radius:10px; background-color:rgb(211, 232, 245)}
+.input {width:350px; padding:12px 14px; border:1px solid rgb(195, 192, 192); 
+        border-radius:12px; background-color:white;}
+
+/* .menu {display: flex; gap:15px;} */
+.menu > a {margin: 0 5px;}
+
+
+
+/* main - section - 카드 갤러리 */
+.cards {display: flex; gap:20px; padding: 5px;}
+.card {flex: 1 1 50%;
+                background-color: whitesmoke; border-radius: 20px;
+                box-shadow: 3px 5px 10px darkgray; 
+                padding: 10px 20px; margin: 10px 0px;}
+
+/* .card h3 {margin: 0;}
+.card p {margin: 0;} */
+.card .title {margin: 0;}
+
+/* 푸터 영역 */
+.footer {text-align: center; height: 50px; 
+         background-color: whitesmoke; color:rgb(93, 91, 91);
+         line-height: 50px;}
+
+
+/* 결과페이지 */
+span {margin-right: 10px;}
+
+/* 나의 도서관 페이지 */
+.muted {color:darkgray}
+
+/* 폼 양식 */
+.form_group {display: flex; flex-direction: column ; 
+             gap:10px; }
+
+
